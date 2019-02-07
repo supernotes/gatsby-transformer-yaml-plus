@@ -17,8 +17,8 @@
     "babel-preset-gatsby-package": "^0.1.3",
     "cross-env": "^5.1.4"
   },
-  "homepage": "",
-  "repository": "",
+  "homepage": "https://github.com/supernotes/gatsby-transformer-yaml-plus",
+  "repository": "https://github.com/supernotes/gatsby-transformer-yaml-plus",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
