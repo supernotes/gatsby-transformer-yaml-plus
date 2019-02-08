@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-transformer-yaml-remark",
+  "name": "gatsby-transformer-yaml-plus",
   "description": "Gatsby transformer plugin for yaml, with extra Markdown support",
   "version": "0.1.0",
   "author": "Connor Neblett <connor.cn@gmail.com>",
