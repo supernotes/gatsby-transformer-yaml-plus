@@ -44,6 +44,19 @@ module.exports = {
 
 The path `./content/` should contain all the YAML files you want to parse.
 
+## Markdown Support
+
+The lack of markdown support in config-like files such as YAML has been an ongoing topic of discussion in the Gatsby community. A helpful feature of `gatsby-transformer-yaml-plus` is that it can optionally crawl through all the fields in a YAML file, and parse any fields which have a special `markdownPreface` identifier.
+
+It looks like this:
+
+```yaml
+title: A Good Title
+description: md//This description has some **markdown** in it.
+```
+
+Where 'md//' is the preface string required to tell `gatsby-transformer-yaml-plus` to render that field as HTML. If you want to change this string, just set `markdownPreface` in the plugin options in `gatsby-config.js`
+
 ## Structure of the Resulting Nodes
 
 When processing your YAML files, this plugin can handle a root-level array of objects, like so:
@@ -152,26 +165,15 @@ Which gives:
 }
 ```
 
-## Markdown Support
-
-The lack of markdown support in config-like files such as YAML has been an ongoing topic of discussion in the Gatsby community. A helpful feature of `gatsby-transformer-yaml-plus` is that it can optionally crawl through all the fields in a YAML file, and parse any fields which have a special `markdownPreface` identifier.
-
-It looks like this:
-
-```yaml
-title: A Good Title
-description: md//This description has some **markdown** in it.
-```
-
-Where 'md//' is the preface string required to tell `gatsby-transformer-yaml-plus` to render that field as HTML. If you want to change this string, just set `markdownPreface` in the plugin options in `gatsby-config.js`
-
-# All plugin options
+# Configuration Options
 
 These are all of the plugin options which can be set in `gatsby-config.js`
 
-| -- | -- |
-| enableRemark | boolean (default: false) | 
-| markdownPraface
+| Option Name     | Value Type | Default |
+| --------------- | ---------- | ------- |
+| enableRemark    | `boolean`  | `false` |
+| markdownPreface | `string`   | `md//`  | 
+
 
 
 
