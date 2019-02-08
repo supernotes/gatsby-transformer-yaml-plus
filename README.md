@@ -165,13 +165,13 @@ Which gives:
 }
 ```
 
-# All plugin options
+# Configuration Options
 
 These are all of the plugin options which can be set in `gatsby-config.js`
 
 | Option Name     | Value Type | Default |
 | --------------- | ---------- | ------- |
-| enableRemark    | `bool`     | `false` |
+| enableRemark    | `boolean`  | `false` |
 | markdownPreface | `string`   | `md//`  | 
 
 
