@@ -1,6 +1,6 @@
-const jsYaml = require(`js-yaml`);
-const _ = require(`lodash`);
-const path = require(`path`);
+const jsYaml = require('js-yaml');
+const _ = require('lodash');
+const path = require('path');
 const remark = require('remark');
 const remarkHTML = require('remark-html');
 
@@ -23,6 +23,7 @@ async function onCreateNode(
       id,
       children: [],
       parent: node.id,
+      fileAbsolutePath: node.absolutePath,
       internal: {
         contentDigest: createContentDigest(obj),
         type,
