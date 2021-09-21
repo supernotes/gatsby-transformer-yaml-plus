@@ -9,6 +9,7 @@
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.10",
     "remark": "^10.0.1",
+    "remark-html": "^13.0.2",
     "unist-util-select": "^1.5.0"
   },
   "devDependencies": {
