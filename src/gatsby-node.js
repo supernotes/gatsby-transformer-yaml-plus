@@ -1,8 +1,8 @@
-const jsYaml = require('js-yaml');
-const _ = require('lodash');
-const path = require('path');
-const remark = require('remark');
-const remarkHTML = require('remark-html');
+import _ from 'lodash';
+import jsYaml from 'js-yaml';
+import path from 'path';
+import remark from 'remark';
+import remarkHTML from 'remark-html';
 
 async function onCreateNode(
   { node, actions, loadNodeContent, createNodeId, createContentDigest },
